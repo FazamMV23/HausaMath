@@ -1,0 +1,44 @@
+/* Reset some default styling */
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Basic styles for the navigation bar */
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Logo, Navigation, Mobile Menu */
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Mobile Menu Styles */
+.burger {
+    display: none; /* Hidden by default on desktop */
+    cursor: pointer;
+}
+
+.line1, .line2, .line3 {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px;
+}
