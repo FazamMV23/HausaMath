@@ -7,7 +7,9 @@
     <!-- Import Poppins font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
     <!-- Link to Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Link to css stylesheets -->
@@ -18,24 +20,46 @@
     <!-- #####Header & Navigation##### -->
     <header>
         <nav class="navbar">
-            <div class="logo">Logo</div>
+            <div class="logo">
+                <img src="/assets/logo-blue.png" alt="logo"> 
+                <h1>Hausa<span>Math</span></h1>
+            </div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Courses</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
+                <li><a href="#">Farko</a></li>
+                <li><a href="#">Sashi</a></li>
+                <li><a href="#">Burin Mu</a></li>
+                <li><a href="#">Kayan Karatu</a></li>
+                <li><a href="#">Labarin Mu</a></li>
             </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+            <a href="#" class="active_btn">Shiga</a>
+            <div class="toggle_btn">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="dropdown_menu">
+                <li><a href="#">Farko</a></li>
+                <li><a href="#">Sashi</a></li>
+                <li><a href="#">Burin Mu</a></li>
+                <li><a href="#">Kayan Karatu</a></li>
+                <li><a href="#">Labarin Mu</a></li>
+                <li><a href="#" class="action_btn">Shiga</a></li>
             </div>
         </nav>
     </header>
     <!-- #####Header & Navigation##### -->
-
+    <main>
     <!-- ######Hero Section########### -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <h2>Welcome to HausaMath</h2>
+                <p>Learn math in Hausa language and explore our interactive curriculum.</p>
+                <a href="/HTML/signup.html" class="rounded-button">Join Us</a>
+            </div>
+            <div class="hero-right">
+                <img src="/assets/hero-student.png" alt="Hero Image">
+            </div>
+        </div>
+    </section>
     <!-- ######Hero Section########### -->
 
     <!-- #####Info Section############ -->
@@ -64,5 +88,8 @@
 
     <!-- #####Footer Section########## -->
     <!-- #####Footer Section########## -->
+    </main>
+   
+    <script src="/JS/main.js"></script>
 </body>
 </html>

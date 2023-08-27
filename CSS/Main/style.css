@@ -1,44 +1,223 @@
-/* Reset some default styling */
-body, ul {
-    margin: 0;
+/* css variables */
+/* css variables */
+/* global styling */
+:root{
+    --orange: #EC360E;
+    --blue: #191847;
+    --white: #FFFFFF;
+    --Gray: #F9F9F9;
+}
+body{
     padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--Gray);
+    font-family: 'Poppins', sans-serif;
+    color: var(--blue);
+    text-decoration: none;
     list-style: none;
 }
-
-/* Basic styles for the navigation bar */
-.navbar {
-    display: grid;
-    grid-template-columns: auto 1fr auto; /* Logo, Navigation, Mobile Menu */
-    align-items: center;
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+.container{
+    max-height: 100vh;
+    margin: 0 5%;
+    overflow-y: scroll;
+    scrollbar-color: var(--blue) var(--orange);
 }
-
-.logo {
-    font-size: 1.5rem;
+::-webkit-scrollbar{
+    width: 1em;
+    overflow-x: none;
 }
-
-.nav-links {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    gap: 20px;
+::-webkit-scrollbar-track{
+    border-radius: 0.2em;
+    background-color: var(--blue);
+    margin-block: 0.25em;
 }
-
-.nav-links a {
-    color: #fff;
+::-webkit-scrollbar-thumb{
+    background: var(--orange);
+    border-radius: 0.45em;
+}
+/* global styling */
+/* **********Home******/
+/* navbar style */
+header{
+    position: relative;
+    padding: 0 0.2rem;
+    background-color: var(--white);
+    height: 5rem;
+    box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    width: 100%;
+}
+li{
+    list-style: none;
+}
+header a{
     text-decoration: none;
+    color: var(--blue);
+    font-size: 1rem;
 }
-
-/* Mobile Menu Styles */
-.burger {
-    display: none; /* Hidden by default on desktop */
+.navbar{
+    width: 100%;
+    height: 2rem;
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo h1{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: -4.8rem;
+    margin-left: 3.7rem;
+}
+.navbar .logo span{
+    color: var(--orange);
+}
+.navbar .logo img{
+    height: 5rem;
+    width: 5rem;
+    margin-top: 4rem;
+    display: inline-block;
+}
+.navbar .nav-links{
+    display: flex;
+    gap: 3rem;
+    margin-top: 3.7rem;
+    font-weight: 500;
+}
+.navbar .active_btn{
+    margin-top: 3rem;
+    padding: .5rem .8rem;
+    border-radius: 1.2rem;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    font-weight: 500;
+    transition: scale 0.2 ease;
+}
+.navbar .active_btn:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    scale: 1.05;
+}
+.active_btn:active{
+    scale: 0.95;
+}
+.navbar .toggle_btn{
+    margin-top: 3.5rem;
+    font-size: 1.5rem;
     cursor: pointer;
+    display: none;
 }
-
-.line1, .line2, .line3 {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
+.nav-links li{
+    padding: .5rem .8rem;
+    border-radius: 1.2rem;
 }
+.nav-links li:hover{
+    background-color: var(--orange);
+}
+.nav-links li a:hover{
+    color: var(--white);
+}
+/* Dropdown Menu */
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: none;
+}
+.dropdown_menu.open{
+    display: block;
+    height: 320px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dropdown_menu .action_btn{
+    background-color: var(--orange);
+    color: var(--white);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem auto;
+    height: 3rem;
+    border-radius: 5rem;
+}
+/* navbar style */
+/* ######Hero Section###########  */
+.hero {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 5rem;
+  }
+  .hero .hero-content {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Keep the left and right sections apart */
+    align-items: center;
+  }
+  .hero .hero-content .hero-left {
+    max-width: 40%;
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align content to the left side */
+  }
+  .hero .hero-content .hero-left h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .hero .hero-content .hero-left p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  .hero .hero-content .hero-left .rounded-button {
+    background-color: transparent;
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border: 2px solid var(--white);
+  }
+  .hero .hero-content .hero-left .rounded-button:hover {
+    background-color: var(--orange);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    color: #ffffff;
+  }
+  .hero .hero-content .hero-right {
+    max-width: 60%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .hero-content .hero-right img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -3rem;
+    margin-top: 3rem;
+  }
+/* ######Hero Section###########  */
+/* ######Hero Section###########  */
+/* ######Hero Section###########  */
+/* ######Hero Section###########  */
