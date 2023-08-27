@@ -12,6 +12,32 @@
         display: none;
     }
     /* #####Navigation Bar######### */
+    /* #####Hero Section######### */
+    .hero .hero-content{
+        width: 100%;
+    }
+    .hero .hero-content .hero-left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+    }
+    .hero .hero-content .hero-left h1{
+        font-size: smaller;
+        width: 100%;
+    }
+    .hero .hero-content .hero-left p{
+        width: 100%;
+        font-size: small;
+    }
+    
+    .hero .hero-content .hero-right{
+        display: none;
+    }
+    .buttons-section{
+        display: none;
+    }
+    /* #####Hero Section######### */
 }
 
 /* #####Media Query for smaller screen######### */
