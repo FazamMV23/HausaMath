@@ -363,7 +363,7 @@ header a{
     font-size: 1.4rem;
   }
   .featured-courses-section .featured-courses-container .first-card .rounded-button {
-    margin-top: 4rem;
+    margin-top: 2rem;
     background-color: transparent;
     border: 2px solid var(--orange);
     color: var(--orange); 
@@ -438,9 +438,347 @@ header a{
     border: none;
     color: var(--white);
   }
-    /* ######Category Section###########  */
-     /* ######Services Section###########  */
-      /* ######Services Section###########  */
-       /* ######Services Section###########  */
-        /* ######Services Section###########  */
-         /* ######Services Section###########  */
+  /* ######Category Section###########  */
+  /* ######About Section##############  */
+  .about-us-section {
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: -7rem;
+  }
+  .about-us-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: -4.2rem;
+    color: var(--blue); 
+  }
+  .about-us-section h2 span {
+    color: var(--orange);
+  }
+  
+  .about-us-section .about-us-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -2rem;
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+  }
+  .about-us-section .about-us-container .about-profile-container,
+  .about-us-section .about-us-container .about-mission-container {
+    flex: 1 0 calc(30% - 1rem); /* Each card takes up 50% width with some margin */
+    padding: 2rem;
+    margin-bottom: 0.4rem; /* Add margin to the bottom to separate the cards */
+    text-align: justify;
+  }
+  .about-us-section .about-us-container h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: var(--blue); /* Use the primary color for the header text */
+  }
+  .about-us-section .about-us-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .about-us-section .about-us-container p span {
+    color: var(--orange);
+    font-weight: bold;
+  }
+  /* ######About Section##############  */
+  /* ######Subscription Section###########  */
+  .subscription-section {
+    padding: 1rem 0;
+    margin-top: -5rem;
+  }
+  .subscription-section h2 {
+    font-size: 2.5rem;
+    margin-top: -1rem;
+    color: var(--blue);
+    text-align: center;
+  }
+  .subscription-section h3 {
+    font-size: 1.8rem;
+    text-align: center;
+    color: var(--orange);
+    margin-top: -2rem;
+  }
+  .subscription-section .subscription-container {
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Add some space between subscription cards */
+    justify-content: space-between; /* Align cards left and right */
+  }
+  .subscription-section .subscription-container .subscription-card {
+    flex: 1 0 calc(30% - 2rem); 
+    background-color: var(--white); 
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .subscription-section .subscription-container .subscription-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--blue); 
+  }
+  .subscription-section .subscription-container .subscription-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .subscription-section .subscription-container .subscription-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .subscription-section .subscription-container .subscription-card ul li {
+    margin-bottom: 0.5rem;
+  }
+  .subscription-section .subscription-container .subscription-card .free-subscriber {
+    color: var(--Gray);
+    margin-top: 4rem;
+  }
+  .subscription-section .subscription-container .subscription-card .subscribe-button {
+    display: block;
+    width: 50%;
+    background-color: var(--orange); 
+    color: var(--white); 
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px; 
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  .subscription-section .subscription-container .subscription-card .subscribe-button:hover {
+    background-color: transparent;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--orange);
+    color: var(--orange);
+  }
+  /* ######Subscription Section###########  */
+  /* ######Testimonial Section###########  */
+  .testimonial-section {
+    background-image: url("/assets/testimonials.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 1rem 0;
+  }
+  .testimonial-section .testimonial-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2rem; 
+  }
+  .testimonial-section .testimonial-container h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: var(--white); 
+    grid-column: 1/-1; 
+  }
+  .testimonial-section .testimonial-container .testimonial-card {
+    background-color: var(--white); 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+  }
+  .testimonial-section .testimonial-container .testimonial-card h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--blue); 
+    margin-bottom: 0.5rem;
+  }
+  .testimonial-section .testimonial-container .testimonial-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+  }
+  /* ######Testimonial Section###########  */
+  /* ######Contact Section###########  */
+  .contact-us-section {
+    padding: 3rem 0;
+  }
+  .contact-us-section .contact-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    flex-wrap: wrap; 
+  }
+  .contact-us-section .contact-container .contact-left {
+    flex: 1 0 40%; 
+    padding: 2rem;
+  }
+  .contact-us-section .contact-container .contact-left h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--blue); 
+  }
+  .contact-us-section .contact-container .contact-left p {
+    font-size: 1.2rem;
+    color: var(--blue);
+  }
+  .contact-us-section .contact-container .contact-left p i {
+    font-size: 2.3rem;
+    color: var(--orange);
+    margin-inline: 1rem;
+  }
+  .contact-us-section .contact-container .contact-right {
+    flex: 1 0 40%; 
+    padding: 2rem;
+  }
+  .contact-us-section .contact-container .contact-card {
+    background-color: transparent; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  .contact-us-section .contact-container .contact-card form {
+    margin-right: 1.8rem;
+  }
+  .contact-us-section .contact-container .contact-card form .form-group {
+    margin-bottom: 1rem;
+  }
+  .contact-us-section .contact-container .contact-card form .form-group input,
+  .contact-us-section .contact-container .contact-card form .form-group textarea {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: transparent;
+  }
+  .contact-us-section .contact-container .contact-card form .form-group input {
+    border-radius: 30px;
+  }
+  .contact-us-section .contact-container .contact-card form .form-group textarea {
+    resize: vertical;
+  }
+  .contact-us-section .contact-container .contact-card form .form-group button {
+    background-color: var(--orange); 
+    color: var(--white); 
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 30px; 
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .contact-us-section .contact-container .contact-card form .form-group button:hover {
+    background-color: var(--orange);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    color: var(--white);
+  }
+  /* ######Contact Section###########  */
+  /* ######Counter Section###########  */
+  .counters-section {
+    background-color: var(--orange); 
+    padding: 3rem 0;
+  }
+  .counters-section .counters-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 2rem; 
+  }
+  .counters-section .counters-container .counter-item {
+    background-color: transparent; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .counters-section .counters-container .counter-item h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--white); 
+    margin-bottom: 1rem;
+  }
+  .counters-section .counters-container .counter-item h4 {
+    font-size: 1.5rem;
+    color: var(--white); 
+  }
+  /* ######Counter Section###########  */
+  /* ######Footer Section###########  */
+  .footer-section {
+    background-color: var(--blue); 
+    color: var(--white); 
+    padding: 3rem 0;
+    margin-bottom: -5rem;
+  }
+  .footer-section .footer-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footer-section .footer-row1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .footer-section .footer-card {
+    flex: 1 0 calc(23% - 2rem); 
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: justify;
+  }
+  .footer-section .footer-card h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .footer-section .footer-card h2 img {
+    height: 100px;
+    width: 100px;
+    display: inline;
+    margin-bottom: -2rem;
+    margin-right: -2rem;
+  }
+  .footer-section .footer-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .footer-section .footer-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .footer-section .footer-card li {
+    margin-bottom: 0.5rem;
+  }
+  .footer-section .footer-card a {
+    color: var(--white); 
+    text-decoration: none;
+  }
+  .footer-section .footer-card .social-icons {
+    color: var(--white);
+    margin-left: 0.5rem;
+  }
+  .footer-section .footer-card .social-icons a {
+    margin: 1rem;
+  }
+  .footer-section .footer-card .social-icons a i {
+    font-size: 2.5rem;
+  }
+  .footer-section .footer-row2 {
+    border-top: 1px solid var(--white);
+    text-align: center;
+  }
+  .footer-section .footer-row2 p {
+    font-size: 1.2rem;
+  }
+  /* ######Footer Section###########  */

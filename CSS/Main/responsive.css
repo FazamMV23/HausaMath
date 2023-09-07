@@ -67,9 +67,109 @@
 
 /* #####Media Query for smaller screen######### */
 @media screen and (max-width: 576px){
-    
+    /* #####Navigation Section######### */
     .dropdown_menu{
         left: 2rem;
         width: unset;
     }
+    /* #####Hero Section######### */
+    .hero .hero-content{
+        width: 100%;
+    }
+    .hero .hero-content .hero-left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .hero .hero-content .hero-left h2{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+    .hero .hero-content .hero-left p{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .hero .hero-content .hero-left .rounded-button{
+        margin: 0 auto;
+        margin-top: 2rem;
+        width: 2rem;
+        height: 1rem;
+        font-size: 0.5rem;
+    }
+    /* #####Services Section######### */
+    /* #####Category Section######### */
+    .featured-courses-section .featured-courses-container .first-card .rounded-button{
+        margin: 0 auto;
+    }
+    .featured-courses-section .featured-courses-container .course-card .rounded-button{
+        margin: 0  auto;
+    }
+    /* #####About Section######### */
+    .about-us-section .about-us-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-us-section .about-us-container .about-mission-container{
+        margin-top: -7rem;
+    }
+    .about-us-section .about-us-container h4 {
+       text-align: center;
+
+    }
+    /* #####Subscription Section######### */
+    .subscription-section h2{
+        font-size: 2.1rem;
+    }
+    .subscription-section .subscription-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .subscription-section .subscription-container .subscription-card .subscribe-button{
+        margin: 0 auto;
+    }
+    /* #####Testimonial Section######### */
+    .testimonial-section .testimonial-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial-section .testimonial-container h2 {
+        font-size: 2.2rem;
+    }
+    /* #####Contact us Section######### */
+    .contact-us-section .contact-container .contact-left h3{
+        text-align: center;
+    }
+    /* #####Counter Section######### */
+    .counters-section .counters-container{
+        display: flex;
+        flex-direction: column;
+    }
+    /* #####Footer Section######### */
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-section .footer-card{
+        width: 100%;
+    }
+    .footer-section .footer-display{
+        display: none;
+    }
+    .footer-section .footer-card{
+        margin: 0 auto;
+    }
+    .footer-section .footer-card h2{
+        text-align: center;
+    }
+    .footer-section .footer-card p{
+        text-align: center;
+    }
+    .footer-section .footer-card .social-icons{
+        text-align: center;
+    }
+
 }
