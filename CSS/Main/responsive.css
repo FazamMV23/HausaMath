@@ -7,6 +7,7 @@
     }
     .navbar .toggle_btn{
         display: block;
+        margin-right: 2rem;
     }
     .dropdown_menu{
         display: none;
@@ -15,20 +16,25 @@
     /* #####Hero Section######### */
     .hero .hero-content{
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .hero .hero-content .hero-left{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        /* align-items: center; */
+        width: 190%;
+        text-align: center;
     }
     .hero .hero-content .hero-left h1{
-        font-size: smaller;
+        font-size: small;
         width: 100%;
     }
     .hero .hero-content .hero-left p{
         width: 100%;
         font-size: small;
+    }
+    .hero .hero-content .hero-left .rounded-button{
+        margin-left: 3rem;
     }
     
     .hero .hero-content .hero-right{
@@ -38,10 +44,30 @@
         display: none;
     }
     /* #####Hero Section######### */
+    /* #####Services Section######### */
+    .services-section .services-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .services-section .services-container .service-card {
+        margin: 1rem auto;
+    }
+    /* #####Services Section######### */
+    /* #####Category Section######### */
+    .featured-courses-section .featured-courses-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .featured-courses-section .featured-courses-container .first-card{
+        width: 100%;
+    }
+    /* #####Category Section######### */
 }
 
 /* #####Media Query for smaller screen######### */
 @media screen and (max-width: 576px){
+    
     .dropdown_menu{
         left: 2rem;
         width: unset;
