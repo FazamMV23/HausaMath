@@ -1,4 +1,4 @@
-/* #####Media Query for small screen######### */
+/* #######################################Home Page##################################  */
 @media screen and (max-width: 992px) {
     /* #####Navigation Bar######### */
     .navbar .nav-links,
@@ -63,6 +63,7 @@
         width: 100%;
     }
     /* #####Category Section######### */
+    /* #######################################Signup Form##################################  */
 }
 
 /* #####Media Query for smaller screen######### */
@@ -172,4 +173,5 @@
         text-align: center;
     }
 
+    /* #######################################Signup Form##################################  */
 }
