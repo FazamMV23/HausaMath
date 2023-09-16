@@ -67,7 +67,7 @@
 }
 
 /* #####Media Query for smaller screen######### */
-@media screen and (max-width: 576px){
+@media screen and (max-width: 600px){
     /* #####Navigation Section######### */
     .dropdown_menu{
         left: 2rem;
@@ -174,4 +174,23 @@
     }
 
     /* #######################################Signup Form##################################  */
+    .signup-container{
+        min-width: 280px;
+        margin-top: 30rem;
+    }
+    .main-user-info{
+        display: block;
+    }
+    .user-input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    ::-webkit-scrollbar{
+        width: 0;
+    }
 }

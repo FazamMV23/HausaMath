@@ -1,19 +1,19 @@
-/* css variables */
-/* css variables */
 /* global styling */
 :root{
+    /* css variables */
     --orange: #EC360E;
     --blue: #191847;
     --white: #FFFFFF;
     --Gray: #F9F9F9;
 }
-
-body{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: var(--Gray);
     font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--Gray);
     color: var(--blue);
     text-decoration: none;
     list-style: none;
@@ -62,7 +62,7 @@ header a{
 .navbar .logo h1{
     font-weight: bold;
     font-size: 2.5rem;
-    margin-top: -4.8rem;
+    margin-top: -4.2rem;
     margin-left: 3.7rem;
 }
 .navbar .logo span{
@@ -71,7 +71,7 @@ header a{
 .navbar .logo img{
     height: 5rem;
     width: 5rem;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     display: inline-block;
 }
 .navbar .nav-links{
@@ -173,7 +173,7 @@ header a{
     max-width: 1200px;
     width: 100%;
     display: flex;
-    justify-content: space-between; /* Keep the left and right sections apart */
+    justify-content: space-between; 
     align-items: center;
   }
   .hero .hero-content .hero-left {
@@ -183,7 +183,7 @@ header a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; /* Align content to the left side */
+    align-items: flex-start; 
   }
   .hero .hero-content .hero-left h2 {
     font-size: 3rem;
@@ -264,31 +264,32 @@ header a{
 /* ######Info Section###########  */
 /* ######Services Section###########  */
 .services-section {
-    background-color: var(--Gray); /* Light gray background */
-    padding: 0.1rem 0;
+    background-color: var(--Gray); 
+    padding: 1rem 0;
   }
   .services-section .services-header {
     max-width: 1200px;
     width: 100%;
-    margin: -2rem auto;
+    margin: -1.5rem auto;
   }
   .services-section .services-header h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2rem;
-    color: var(--blue); /* Use the primary color for the heading */
-    width: 100%; /* Make the heading full width for better alignment */
+    color: var(--blue); 
+    width: 100%; 
   }
+
   .services-section .services-container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Flex cards horizontally */
+    justify-content: space-between; 
   }
   .services-section .services-container .service-card {
     flex: 1;
-    background-color: var(--white); /* White background for cards */
+    background-color: var(--white); 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 2rem;
@@ -304,13 +305,23 @@ header a{
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
+  .services-section .services-container .service-card a {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-family: 700;
+    text-decoration: none;
+    width: 100%;
+    display: block;
+    color: var(--blue);
+  }
   .services-section .services-container .service-card:hover {
     background-color: var(--orange);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border: none;
     color: var(--white);
   }
-  .services-section .services-container .service-card:hover i {
+  .services-section .services-container .service-card:hover i,
+  .services-section .services-container .service-card:hover a {
     color: var(--white);
   }
   /* ######Services Section###########  */
@@ -329,7 +340,7 @@ header a{
   .featured-courses-section .featured-courses-container h3 {
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: -2.2rem;
+    margin-bottom: -.5rem;
     color: var(--orange); 
     width: 100%; 
   }
@@ -341,13 +352,13 @@ header a{
   }
   .featured-courses-section .featured-courses-container .first-card {
     width: 30%;
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
   .featured-courses-section .featured-courses-container .first-card h4 {
     text-align: start;
     font-size: 1.4rem;
     color: var(--orange);
-    margin-bottom: -1.3rem;
+    margin-bottom: -.3rem;
   }
   .featured-courses-section .featured-courses-container .first-card h3 {
     text-align: start;
@@ -444,7 +455,8 @@ header a{
   }
   .about-us-section h2 {
     font-size: 2.5rem;
-    margin-bottom: -4.2rem;
+    margin-top: 2rem;
+    margin-bottom: -1.2rem;
     color: var(--blue); 
   }
   .about-us-section h2 span {
@@ -485,7 +497,7 @@ header a{
   /* ######Subscription Section###########  */
   .subscription-section {
     padding: 1rem 0;
-    margin-top: -5rem;
+    margin-top: -4rem;
   }
   .subscription-section h2 {
     font-size: 2.5rem;
@@ -497,7 +509,7 @@ header a{
     font-size: 1.8rem;
     text-align: center;
     color: var(--orange);
-    margin-top: -2rem;
+    margin-top: -.4rem;
   }
   .subscription-section .subscription-container {
     max-width: 1200px;
@@ -505,8 +517,8 @@ header a{
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem; /* Add some space between subscription cards */
-    justify-content: space-between; /* Align cards left and right */
+    gap: 2rem; 
+    justify-content: space-between; 
   }
   .subscription-section .subscription-container .subscription-card {
     flex: 1 0 calc(30% - 2rem); 
@@ -697,6 +709,7 @@ header a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
   }
   .counters-section .counters-container .counter-item h2 {
     font-size: 3rem;
@@ -776,71 +789,152 @@ header a{
     text-align: center;
   }
   .footer-section .footer-row2 p {
+    padding-top: .8rem;
     font-size: 1.2rem;
   }
   /* ######Footer Section###########  */
 
-   /* #######################################Signup Form##################################  */
- 
- 
- .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem 3.5rem;
-    background-color: var(--white);
-    border: 1px solid var(--orange);
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
- }
- 
- h2 {
-    text-align: center;
- }
- 
- .row {
+  /* #######################################Signup Form##################################  */
+
+  .signup{
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
- }
- 
- .column {
-    flex-basis: 48%; /* Two columns, allowing for a little spacing */
- }
- 
- label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
- }
- 
- input[type="text"],
- input[type="email"],
- input[type="password"],
- select {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup .logo{
+    margin-top: -3rem;
+  }
+  .signup-container{
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
- }
+    max-width: 650px;
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin: 0 1.5rem;
+    border-radius: .8rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: .5rem 0;
+    width: 100%;
+  }
+  .user-input-box {
+    margin-block: .6rem;
+    width: 47%;
+  }
  
- select[multiple] {
-    height: 100px; /* Adjust as needed */
- }
- 
- button {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-top: 15px;
- }
- 
- button:hover {
-    background-color: #0056b3;
- }
- 
+  
 
+  /* #######################################SignIn Form##################################  */
+  .login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-container{
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--white);
+    padding: 1.5rem;
+    margin: 0 1rem;
+    border-radius: .8rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  .login .logo, .signup .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.logo img{
+    height: 5rem;
+    width: 17rem;
+    margin-top: 1.5rem;
+    display: inline-block;
+}
+.login__form{
+  position: relative;
+  margin-inline: 1.5rem;
+}
+.login__title{
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 1.25rem;
+}
+.signup__box{
+  width: 40%;
+}
+.login__inputs, .login__box{
+  display: grid;
+}
+.login__inputs{
+  row-gap: 1.25rem;
+  margin-bottom: 1rem;
+}
+.login__box{
+  grid-template-columns: 1fr max-content;
+  column-gap: .75rem;
+  align-items: center;
+  border: 2px solid var(--orange);
+  padding-inline: 1.25rem;
+  border-radius: 4rem;
+}
+.login__input,
+.login__button{
+  border: none;
+  outline: none;
+}
+.login__input{
+  width: 100%;
+  background: transparent;
+  padding-block: 1rem;
+}
+.login__input::placeholder{
+  color: var(--blue);
+}
+.login__box i{
+  font-size: 1.25rem;
+  color: var(--blue);
+}
+.login__check{
+  width: 100%;
+}
+.login__check p{
+  font-size: 12px;
+  text-align: center;
+  margin-block: .5rem;
+}
+.login__check p i{
+  color: var(--orange);
+}
+.login__button{
+  width: 100%;
+  border-radius: 4rem;
+  padding-block: 1.2rem;
+  margin-top: .2rem;
+  color: var(--white);
+  background-color: var(--orange);
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.back__to__home{
+  width: 100%;
+  height: 2rem;
+  margin-top: 2rem;
+}
+.back__to__home p{
+  font-size: 12px;
+  text-align: center;
+}
+.back__to__home a{
+  text-decoration: none;
+  color: var(--blue);
+  cursor: pointer;
+}
 
-   /* #######################################SignIn Form##################################  */
+  /* ###########################################End######################################  */

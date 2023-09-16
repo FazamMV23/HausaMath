@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HausaMath - Shafin Shiga</title>
+    <title>HausaMath - Shafin Yin Rijista</title>
     <!-- Import Poppins font from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,73 +17,50 @@
     <link rel="stylesheet" href="/CSS/Main/responsive.css">
 </head>
 <body>
-    <!-- <div class="logo">
-        <img src="/assets/logo-blue.png" alt="logo"> 
-        <h1>Hausa<span>Math</span></h1>
-    </div> -->
-    <div class="container">
-        <form id="signup-form">
-               <h2>Sign Up</h2>
-               <div class="row">
-                   <div class="column">
-                       <label for="firstName">First Name:</label>
-                       <input type="text" id="firstName" name="firstName" required>
-                   </div>
-                   <div class="column">
-                       <label for="lastName">Last Name:</label>
-                       <input type="text" id="lastName" name="lastName" required>
-                   </div>
-               </div>
-               <div class="row">
-                   <div class="column">
-                       <label for="username">Username:</label>
-                       <input type="text" id="username" name="username" required>
-                   </div>
-                   <div class="column">
-                       <label for="email">Email:</label>
-                       <input type="email" id="email" name="email" required>
-                   </div>
-               </div>
-               <div class="row">
-                <div class="column">
-                    <label for="category">Sashe</label>
-                    <select id="country" name="category" required>
-                        <option value="Firamare">Firamare</option>
-                        <option value="Sakandire">Sakandiri</option>
-                        <option value="Jami'a">Jami'a</option>
-                    </select>
+    <div class="signup">
+        <div class="logo">
+            <img src="/assets/logo-new-removebg-preview.png" alt="logo"> 
+        </div>
+        <div class="signup-container">
+            <h1 class="login__title">Rijista</h1>
+            <form action="#">
+                <div class="main-user-info">
+                    <div class="login__box user-input-box">
+                        <input type="text" name="Name" id="Name" placeholder="Shigar da Suna" class="login__input">
+                        <i class="fas fa-user"></i>
+                    </div>
+                        <div class="login__box user-input-box">
+                            <input type="text" name="userName" id="UserName" placeholder="Wakilin Suna" class="login__input">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    <div class="login__box user-input-box">
+                        <input type="email" name="Email" id="Email" placeholder="Shigar da Imel" class="login__input">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="login__box user-input-box">
+                        <input type="text" name="School" id="School" placeholder="Shigar da Sunan Makaranta" class="login__input">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="login__box user-input-box">
+                        <input type="text" name="Category" id="Category" placeholder="Firamare, Sakandire...." class="login__input">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="login__box user-input-box">
+                        <input type="text" name="Class" id="Class" placeholder="Na Daya, Na Biyu..." class="login__input">
+                        <i class="fas fa-book"></i>
+                    </div>
                 </div>
-                <div class="column">
-                    <label for="class">Aji:</label>
-                    <select id="country" name="class" required>
-                        <option value="daya">Aji Na Daya</option>
-                        <option value="biyu">Aji Na Biyu</option>
-                        <option value="uku">Aji Na Uku</option>
-                    </select>
+                <button type="submit" class="login__button">Shiga</button>
+                <div class="back__to__home">
+                    <p>Koma Shafin <a href="index.html">
+                        Farko
+                    </a> Ko 
+                <a href="login.html">Shiga</a> Tsohon Akwati</p>
                 </div>
-               </div>
-               <div class="row">
-                   <div class="column">
-                       <label for="country">Country:</label>
-                       <select id="country" name="country" required>
-                           <option value="usa">United States</option>
-                           <option value="canada">Canada</option>
-                           <option value="uk">United Kingdom</option>
-                       </select>
-                   </div>
-                   <div class="column">
-                       <label for="gender">Gender:</label>
-                       <select id="gender" name="gender" required>
-                           <option value="male">Male</option>
-                           <option value="female">Female</option>
-                           <option value="other">Other</option>
-                       </select>
-                   </div>
-               </div>
-               <button type="submit">Sign Up</button>
-           </form>
-       </div>
-    
+            </form>
+        </div>
+        
+    </div>
     
 
 
