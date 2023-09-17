@@ -10,3 +10,22 @@ toggleBtn.onclick = function (){
     ? 'fas fa-xmark'
     : 'fas fa-bars'
 }
+
+function startProgress() {
+    const progressCircle = document.querySelector(".progress-circle");
+    const progressText = document.querySelector(".progress-text");
+
+    let progress = 0;
+    const targetProgress = 75; // Set your desired target progress percentage here.
+
+    const interval = setInterval(() => {
+        progress += 1;
+        progressCircle.style.clipPath = `conic-gradient(#3498db ${progress}%, #3498db 0%)`;
+        progressText.textContent = `${progress}%`;
+
+        if (progress >= targetProgress) {
+            clearInterval(interval);
+        }
+    }, 20);
+}
+

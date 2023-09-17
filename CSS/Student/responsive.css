@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+    .wrapper{
+        margin-inline: auto;
+        margin-top: 3rem;
+    }
+    .info{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .info-card1, .info-card2{
+        width: 100%;
+    }
+    .lesson-card{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .footer-text{
+        display: none;
+    }
+}

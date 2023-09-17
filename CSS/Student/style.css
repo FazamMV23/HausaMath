@@ -1,4 +1,4 @@
-/* global styling */
+/* color variables */
 :root{
     /* css variables */
     --orange: #EC360E;
@@ -6,33 +6,13 @@
     --white: #FFFFFF;
     --Gray: #F9F9F9;
 }
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-body{
-    background-color: var(--Gray);
-    color: var(--blue);
-    text-decoration: none;
-    list-style: none;
-}
-::-webkit-scrollbar{
-    width: 1em;
-    overflow-x: none;
-}
-::-webkit-scrollbar-track{
-    background-color: var(--white);
-    margin-block: 0.15em;
-}
-::-webkit-scrollbar-thumb{
-    background: var(--orange);
-    border-radius: 0.45em;
-}
-/* global styling */
+
+/* color variables */
 /* #######################################Home Page##################################  */
 /* navbar style */
+.sidebar{
+    display: block;
+}
 .sidebar ul{
     margin: 0;
     padding: 2rem;
@@ -124,6 +104,7 @@ body{
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: .7rem;
 }
+
 .menubar ul{
     display: flex;
     align-items: space-around;
@@ -156,6 +137,95 @@ body{
     background-color: var(--white);
     border-radius: 1.5rem;
 }
+.info-card1 {
+    padding: 1.5rem;
+    line-height: -2.4rem;
+
+}
+.info-card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-card1 h3{
+    font-weight: 600;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    margin-bottom: .8rem;
+}
+.info-card1 h6{
+    font-weight: 600;
+    font-size: 1rem;
+    /* display: inline; */
+}
+.info-card1 p{
+    text-align: end;
+    font-size: .9rem;
+    margin-top: -.9rem;
+    text-transform: uppercase;
+}
+.info-card1 p a{
+    text-decoration: none;
+    color: var(--orange);
+}
+.progress-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.progress {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 8px solid var(--Gray);
+    border-radius: 50%;
+}
+
+.progress-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 8px solid var(--orange);
+    border-radius: 50%;
+    clip-path: conic-gradient(var(--orange) 0%, var(--orange) 0%);
+    animation: progress-fill 2s linear forwards;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: var(--orange);
+}
+.progress-btn{
+    margin-top: 3rem;
+    padding: .5rem .8rem;
+    border-radius: 1.2rem;
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    font-weight: 500;
+    transition: scale 0.2 ease;
+    background: transparent;
+}
+.progress-btn:hover{
+    background-color: var(--orange);
+    color: var(--white);
+    scale: 1.05;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes progress-fill {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 /* Info Section style */
 /* Lessons Section style */
 .lessons{
@@ -184,7 +254,8 @@ body{
     background: var(--white);
     border-radius: .4rem;
     display: inline;
-    flex: 0 1 30%;
+    flex: 0 1 32%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 .lessons-cards .lesson-card img{
     width: 15rem;
@@ -210,6 +281,7 @@ body{
 /* Lessons Section style */
 /* Footer Section style */
 .footer-text{
+    display: block;
     width: 100%;
     display: flex;
     align-items: center;

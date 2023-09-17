@@ -1,0 +1,33 @@
+/* global styling */
+:root{
+    /* css variables */
+    --orange: #EC360E;
+    --blue: #191847;
+    --white: #FFFFFF;
+    --Gray: #F9F9F9;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--Gray);
+    color: var(--blue);
+    text-decoration: none;
+    list-style: none;
+}
+::-webkit-scrollbar{
+    width: 1em;
+    overflow-x: none;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--white);
+    margin-block: 0.15em;
+}
+::-webkit-scrollbar-thumb{
+    background: var(--orange);
+    border-radius: 0.45em;
+}
+/* global styling */
