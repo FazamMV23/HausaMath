@@ -39,7 +39,7 @@ header a{
 .navbar .logo h1{
     font-weight: bold;
     font-size: 2.5rem;
-    margin-top: -4.2rem;
+    margin-top: -4.9rem;
     margin-left: 3.7rem;
 }
 .navbar .logo span{
@@ -48,7 +48,7 @@ header a{
 .navbar .logo img{
     height: 5rem;
     width: 5rem;
-    margin-top: 2.5rem;
+    margin-top: 3.5rem;
     display: inline-block;
 }
 .navbar .nav-links{
@@ -90,7 +90,7 @@ header a{
     color: var(--white);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
-.nav-links li a:hover{
+.nav-links li:hover a{
     color: var(--white);
 }
 /* Dropdown Menu */
@@ -804,8 +804,6 @@ header a{
     width: 47%;
   }
  
-  
-
   /* #######################################SignIn Form##################################  */
   .login{
     display: flex;
@@ -898,6 +896,10 @@ header a{
   font-weight: 700;
   cursor: pointer;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.login__button a{
+  text-decoration: none;
+  color: var(--white);
 }
 .back__to__home{
   width: 100%;
