@@ -39,8 +39,8 @@ header a{
 .navbar .logo h1{
     font-weight: bold;
     font-size: 2.5rem;
-    margin-top: -4.9rem;
-    margin-left: 3.7rem;
+    margin-top: -4.7rem;
+    margin-left: 3.2rem;
 }
 .navbar .logo span{
     color: var(--orange);
@@ -48,8 +48,9 @@ header a{
 .navbar .logo img{
     height: 5rem;
     width: 5rem;
-    margin-top: 3.5rem;
+    margin-top: 2.3rem;
     display: inline-block;
+    margin-left: -.2rem;
 }
 .navbar .nav-links{
     display: flex;
@@ -413,6 +414,11 @@ header a{
     transition: background-color 0.3s ease-in-out;
     border: none;
     outline: none;
+  }
+  .featured-courses-section .featured-courses-container .course-card .rounded-button a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1rem;
   }
   .featured-courses-section .featured-courses-container .course-card .rounded-button i {
     margin-right: 0.5rem;
