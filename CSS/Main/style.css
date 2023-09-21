@@ -457,16 +457,16 @@ header a{
   }
   .about-us-section .about-us-container .about-profile-container,
   .about-us-section .about-us-container .about-mission-container {
-    flex: 1 0 calc(30% - 1rem); /* Each card takes up 50% width with some margin */
+    flex: 1 0 calc(30% - 1rem);
     padding: 2rem;
-    margin-bottom: 0.4rem; /* Add margin to the bottom to separate the cards */
+    margin-bottom: 0.4rem; 
     text-align: justify;
   }
   .about-us-section .about-us-container h4 {
     font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
-    color: var(--blue); /* Use the primary color for the header text */
+    color: var(--blue); 
   }
   .about-us-section .about-us-container p {
     font-size: 1.2rem;
@@ -837,7 +837,7 @@ header a{
   }
 .logo img{
     height: 5rem;
-    width: 17rem;
+    width: 19rem;
     margin-top: 1.5rem;
     display: inline-block;
 }
