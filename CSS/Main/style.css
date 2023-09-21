@@ -860,9 +860,16 @@ header a{
   grid-template-columns: 1fr max-content;
   column-gap: .75rem;
   align-items: center;
-  border: 2px solid var(--orange);
+  border: 1px solid var(--orange);
   padding-inline: 1.25rem;
   border-radius: 4rem;
+}
+.login__box:hover{
+  box-shadow:  0 0 2px 1px var(--blue);
+  border: 1px solid var(--blue);
+}
+.login__box:hover i{
+  color: var(--orange);
 }
 .login__input,
 .login__button{
@@ -1011,7 +1018,7 @@ header a{
  .payment-wrapper .input_box label{
   width: 49%;
   padding: 13px;
-  background: var(--Gray);
+  background: transparent;
   display: inline-block;
   text-align: center;
   border: 1px solid var(--orange);
