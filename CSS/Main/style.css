@@ -610,9 +610,13 @@ header a{
     padding: 2rem;
   }
   .contact-us-section .contact-container .contact-left h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: -1rem;
     color: var(--blue); 
+  }
+  .contact-us-section .contact-container .contact-left  img{
+    width: 30rem;
+    height: 20rem;
   }
   .contact-us-section .contact-container .contact-left p {
     font-size: 1.2rem;
@@ -621,7 +625,7 @@ header a{
   .contact-us-section .contact-container .contact-left p i {
     font-size: 2.3rem;
     color: var(--orange);
-    margin-inline: 1rem;
+    margin-inline: .7rem;
   }
   .contact-us-section .contact-container .contact-right {
     flex: 1 0 40%; 
